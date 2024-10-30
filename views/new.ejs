@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add new user</title>
+    <style>
+        *{
+            background-color: rgb(206, 157, 253);
+        }
+        button{
+            background-color: rgb(234, 45, 45);
+            color: white;
+        }
+        input{
+            background-color: white;
+        }
+    </style>
+</head>
+<body>
+    <h2>Add new user :</h2>
+    <form method="post" action="/user/new">
+        <input name="Email" type="Email" placeholder="Enter email">
+        <input name="Username" type="Username" placeholder="Enter username">
+        <input name="Password" type="Password" placeholder="Enter password">
+        <button>Submit</button>
+    </form>
+</body>
+</html>

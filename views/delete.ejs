@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delete User</title>
+    <style>
+        *{
+            background-color: rgb(206, 157, 253);
+        }
+        button{
+            background-color: rgb(234, 45, 45);
+            color: white;
+        }
+        input{
+            background-color: white;
+        }
+    </style>
+</head>
+<body>
+    <h3>To delete this user : <%=user.Email%> , enter the password</h3>
+    <form method="post" action="/user/<%=user.id%>?_method=DELETE">
+        <input placeholder="enter password to delete" name="password">
+        <button>Delete</button>
+    </form>
+</body>
+</html>
