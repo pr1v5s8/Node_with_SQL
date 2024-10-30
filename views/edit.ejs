@@ -4,11 +4,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Edit username route</title>
+    <style>
+        *{
+            background-color: rgb(206, 157, 253);
+        }
+        button{
+            background-color: rgb(234, 45, 45);
+            color: white;
+        }
+        textarea{
+            background-color: white;
+        }
+        input{
+            background-color: white;
+        }
+    </style>
 </head>
 <body>
-    <h1>You are about to edit this user : <%= user.Email %> </h1>
+    <h2>You are about to edit this user : <%= user.Email %> </h2>
     <form method="post" action="/user/<%=user.Id%>?_method=patch">
         <textarea name="username"> <%= user.Username %> </textarea>
+        <br>
         <input type="password" name="Password" placeholder="enter password">
         <button>Edit</button>
     </form>
